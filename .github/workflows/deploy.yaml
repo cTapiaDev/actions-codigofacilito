@@ -24,6 +24,7 @@ jobs:
         path: test.log
     
   segundo_job:
+    needs: first_job
     runs-on: ubuntu-latest
 
     steps:
